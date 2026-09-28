@@ -78,9 +78,14 @@ summary {
   text-decoration: none;
 }
 
-.brand img {
+.brandLogo img{
   width: 220px;
   height: auto;
+}
+.brandFooter img {
+  width: 220px;
+  height: auto;
+  opacity: .5;
 }
 
 .brand-copy {

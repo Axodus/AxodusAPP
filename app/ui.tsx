@@ -118,10 +118,25 @@ const nav = [
   ["Platforms", "/platforms"],
 ] as const;
 
-function Brand({ footer = false }: { footer?: boolean }) {
+function BrandFooter({ footer = false }: { footer?: boolean }) {
   return (
     <Link
-      className={"brand" + (footer ? " footer-brand" : "")}
+      className={"brandFooter" + (footer ? " footer-brand" : "")}
+      href="/"
+      aria-label="Axodus Institutional"
+    >
+      
+      <span className="brand-copy">
+        <img src="/brand/logo.svg" alt="Axodus" />
+      </span>
+    </Link>
+  );
+}
+
+function BrandHeader({ footer = false }: { footer?: boolean }) {
+  return (
+    <Link
+      className={"brandLogo" + (footer ? " footer-brand" : "")}
       href="/"
       aria-label="Axodus home"
     >
@@ -137,7 +152,7 @@ export function Header() {
   return (
     <header className="site-header">
       <div className="shell ax-container nav-wrap ax-nav">
-        <Brand />
+        <BrandHeader />
         <div className="nav-actions">
           <nav aria-label="Primary navigation">
             {nav.map(([name, href]) => (
@@ -185,7 +200,7 @@ export function Footer() {
     <footer className="ax-footer">
       <div className="shell footer-main">
         <div className="footer-branding">
-          <Brand footer />
+          <BrandFooter footer/>
           <p>Research-driven institutional pages with bounded public claims.</p>
         </div>
         <div className="footer-institutional">
