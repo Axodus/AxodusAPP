@@ -125,10 +125,9 @@ function Brand({ footer = false }: { footer?: boolean }) {
       href="/"
       aria-label="Axodus home"
     >
-      <img src="/axodus-mark.svg" width="50" height="39" alt="" />
+      
       <span className="brand-copy">
-        <span className="wordmark-label">Axodus</span>
-        <span className="brand-subline">Institutional site</span>
+        <img src="/brand/axodusInstitutional.svg" alt="Axodus" />
       </span>
     </Link>
   );
