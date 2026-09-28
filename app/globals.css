@@ -755,7 +755,7 @@ footer {
 
 .footer-main {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: var(--ax-space-7);
   padding-bottom: var(--ax-space-8);
 }
@@ -766,7 +766,12 @@ footer {
   align-items: flex-start;
   gap: var(--ax-space-3);
 }
-
+.footer-main > footer-branding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--ax-space-3);
+}
 .footer-main > div:first-child p {
   max-width: 340px;
   margin: var(--ax-space-5) 0 0;
