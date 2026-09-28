@@ -763,14 +763,13 @@ footer {
 .footer-main > div {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: var(--ax-space-3);
 }
 .footer-main > footer-branding {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--ax-space-3);
+
 }
 .footer-main > div:first-child p {
   max-width: 340px;
