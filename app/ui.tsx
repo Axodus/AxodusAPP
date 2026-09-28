@@ -184,11 +184,11 @@ export function Footer() {
   return (
     <footer className="ax-footer">
       <div className="shell footer-main">
-        <div>
+        <div className="footer-branding">
           <Brand footer />
           <p>Research-driven institutional pages with bounded public claims.</p>
         </div>
-        <div>
+        <div className="footer-institutional">
           <h3>Explore</h3>
           {nav.slice(0, 3).map(([name, href]) => (
             <Link key={href} href={href}>
@@ -196,7 +196,15 @@ export function Footer() {
             </Link>
           ))}
         </div>
-        <div>
+        <div className="footer-nav">
+          <h3>Explore</h3>
+          {nav.slice(0, 3).map(([name, href]) => (
+            <Link key={href} href={href}>
+              {name}
+            </Link>
+          ))}
+        </div>        
+        <div className="footer-records">
           <h3>Records</h3>
           {nav.slice(3).map(([name, href]) => (
             <Link key={href} href={href}>
